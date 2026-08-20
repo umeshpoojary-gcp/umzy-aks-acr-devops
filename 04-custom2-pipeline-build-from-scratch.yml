@@ -31,8 +31,8 @@ stages:
             command: 'buildAndPush'
             Dockerfile: '**/Dockerfile'
             tags:
-             $(tag)
-             $(Build.SourceVersion) 
+             $(ImageTag)
+             #$(Build.SourceVersion) 
 
         - task: CopyFiles@2
           inputs:
