@@ -8,12 +8,9 @@
 trigger:
 - master
 
-pool:
-  vmImageName: ubuntu-latest
-  
-
 variables:
   tag: '$(Build.BuildId)'
+  vmImageName: 'ubuntu-latest'
 
 # Stage-1 - Build:
 stages:
