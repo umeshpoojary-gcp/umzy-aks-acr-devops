@@ -10,6 +10,7 @@ trigger:
 
 variables:
   tag: '$(Build.BuildId)'
+  ImageTag: $(Build.BuildId)
   
 
 # Stage-1 - Build:
